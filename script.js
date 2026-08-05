@@ -191,7 +191,7 @@ function initGalaxy() {
   });
 
   const textureLoader = new THREE.TextureLoader();
-  const photoFiles = ['assets/photo1.jpg', 'assets/photo2.jpg', 'assets/photo3.jpg'];
+  const photoFiles = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg'];
   const photosGroup = new THREE.Group();
   scene.add(photosGroup);
 
