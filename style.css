@@ -1,0 +1,206 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #020108;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#welcome-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.3);
+}
+
+#start-btn {
+  margin-top: 20px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#start-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #ff416c;
+}
+
+/* MODALE POP-UP */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal-content {
+  background: rgba(20, 10, 30, 0.95);
+  border: 1.5px solid #ff69b4;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 520px;
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.4);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+#close-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ff69b4;
+  transition: color 0.2s;
+}
+
+#close-btn:hover {
+  color: #fff;
+}
+
+.modal-content img, .modal-content video {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+/* DÉCORATION DU POÈME FLORAL */
+.poem-card {
+  background: rgba(15, 5, 25, 0.9);
+  border: 1px dashed #ff69b4;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: inset 0 0 15px rgba(255, 105, 180, 0.2);
+  color: #fff;
+  font-family: 'Georgia', serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.poem-section {
+  margin-bottom: 16px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.poem-intro {
+  color: #ffb6c1;
+  font-size: 1.1rem;
+}
+
+.poem-surveillance {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.poem-cadeau {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.poem-signature {
+  text-align: right;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  color: #ff69b4;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* STYLE DE LA BLAGUE INTERACTIVE */
+.joke-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.joke-input {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ff69b4;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  outline: none;
+  width: 80%;
+}
+
+.joke-btn {
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.joke-btn:hover {
+  transform: scale(1.05);
+}
+
+.gift-option {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 105, 180, 0.3);
+  padding: 12px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 85%;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.gift-option:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ff69b4;
+}
+
+.payment-area {
+  position: relative;
+  min-height: 120px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#no-btn {
+  position: absolute;
+  background: #555;
+  transition: all 0.15s ease-out;
+}
