@@ -54,6 +54,7 @@ function initGalaxy() {
 
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
   camera.position.set(0, 2.5, 5);
+  camera.lookAt(0, 0.3, 0);
 
   const renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -191,7 +192,7 @@ function initGalaxy() {
   });
 
   const textureLoader = new THREE.TextureLoader();
-  const photoFiles = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg'];
+  const photoFiles = ['assets/photo1.jpg', 'assets/photo2.jpg', 'assets/photo3.jpg'];
   const photosGroup = new THREE.Group();
   scene.add(photosGroup);
 
@@ -276,7 +277,7 @@ function initGalaxy() {
             Dans l'immensite de cet univers, il y a des personnes qui apportent une vraie belle energie, et tu en fais clairement partie.<br>
             Toujours sympa, toujours reactive... Franchement, rien a redire, tu geres ! 🌟
           </div>
-         
+          
           <hr style="border:0; height:1px; background:linear-gradient(to right, transparent, #ff69b4, transparent); margin:15px 0;">
 
           <div class="poem-section">
@@ -330,7 +331,7 @@ function initGalaxy() {
           🎉 Mot de passe accepte !
         </p>
         <p>Quel cadeau souhaites-tu commander ? 🎁</p>
-       
+        
         <div class="gift-option" data-gift="un joli bracelet 📿">📿 Un joli bracelet</div>
         <div class="gift-option" data-gift="un bon yaourt 🍦">🍦 Un bon yaourt</div>
         <div class="gift-option" data-gift="un gros Shawarma 🌯">🌯 Un gros Shawarma</div>
@@ -353,7 +354,7 @@ function initGalaxy() {
           Excellent choix ! Tu as choisi : <strong>${gift}</strong> !<br><br>
           Es-tu prete a payer la facture ? 💳
         </p>
-       
+        
         <div class="payment-area" id="pay-area">
           <button id="yes-btn" class="joke-btn" style="position: absolute; left: 20%; top: 30px;">OUI ! 🤝</button>
           <button id="no-btn" class="joke-btn" style="position: absolute; left: 60%; top: 30px;">NON 😜</button>
