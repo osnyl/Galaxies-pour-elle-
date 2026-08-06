@@ -160,7 +160,7 @@ function initGalaxy() {
   const messages = [
     "Joyeux Anniversaire Fleuryne 🎂",
     "Pour Fleuryne ✨",
-    "Mon Etoile 🌌",
+    "Mon Étoile 🌌",
     "De la part d'Osnyl ✨"
   ];
   const textGroup = new THREE.Group();
@@ -215,7 +215,7 @@ function initGalaxy() {
   const mouse = new THREE.Vector2();
 
   const interactiveItems = [
-    { title: "📜 Poeme", type: "poem" },
+    { title: "📜 Poème", type: "poem" },
     { title: "🧩 Devinette", type: "joke" }
   ];
 
@@ -274,20 +274,20 @@ function initGalaxy() {
         <div class="poem-card">
           <div class="poem-section">
             Fleuryne,<br><br>
-            Dans l'immensite de cet univers, il y a des personnes qui apportent une vraie belle energie, et tu en fais clairement partie.<br>
-            Toujours sympa, toujours reactive... Franchement, rien a redire, tu geres ! 🌟
+            Dans l'immensité de cet univers, il y a des personnes qui apportent une vraie belle énergie, et tu en fais clairement partie.<br>
+            Toujours sympa, toujours réactive... Franchement, rien à redire, tu gères ! 🌟
           </div>
           
           <hr style="border:0; height:1px; background:linear-gradient(to right, transparent, #ff69b4, transparent); margin:15px 0;">
 
           <div class="poem-section">
-            Sache que je garde toujours un oeil sur toi (oui oui, je surveille de pres ! 👀)...<br><br>
-            Profite a fond de ta journee et fete ca comme il se doit !<br><br>
+            Sache que je garde toujours un œil sur toi (oui oui, je surveille de près ! 👀)...<br><br>
+            Profite à fond de ta journée et fête ça comme il se doit !<br><br>
             ✨ Joyeux Anniversaire ! ✨
           </div>
 
           <div class="poem-signature">
-            — Signe : Osnyl 💖
+            — Signé : Osnyl 💖
           </div>
         </div>
       `;
@@ -297,11 +297,11 @@ function initGalaxy() {
         <div class="joke-container">
           <p style="font-size: 1.05rem; line-height: 1.6;">
             🔒 <strong>Devinette :</strong><br><br>
-            Qu'est-ce qui est plus brillant qu'une etoile, super sympa, repond toujours ultra vite aux messages, donne de super conseils et qui me doit un gateau ? 🤔
+            Qu'est-ce qui est plus brillant qu'une étoile, super sympa, répond toujours ultra vite aux messages, donne de super conseils et qui me doit un gâteau ? 🤔
           </p>
-          <input type="text" id="pass-input" class="joke-input" placeholder="Ton prenom...">
+          <input type="text" id="pass-input" class="joke-input" placeholder="Ton prénom...">
           <button id="pass-submit" class="joke-btn">Valider 🔓</button>
-          <p id="pass-error" style="color: #ff4757; display: none; font-size: 0.9rem;">Mauvaise reponse 😜 Indice: Ton prenom !</p>
+          <p id="pass-error" style="color: #ff4757; display: none; font-size: 0.9rem;">Mauvaise réponse 😜 Indice : Ton prénom !</p>
         </div>
       `;
 
@@ -328,7 +328,7 @@ function initGalaxy() {
     modalBody.innerHTML = `
       <div class="joke-container">
         <p style="font-size: 1.1rem; color: #ffd700; font-weight: bold;">
-          🎉 Mot de passe accepte !
+          🎉 Mot de passe accepté !
         </p>
         <p>Quel cadeau souhaites-tu commander ? 🎁</p>
         
@@ -352,7 +352,7 @@ function initGalaxy() {
       <div class="joke-container">
         <p style="font-size: 1.1rem; line-height: 1.5;">
           Excellent choix ! Tu as choisi : <strong>${gift}</strong> !<br><br>
-          Es-tu prete a payer la facture ? 💳
+          Es-tu prête à payer la facture ? 💳
         </p>
         
         <div class="payment-area" id="pay-area">
@@ -384,7 +384,7 @@ function initGalaxy() {
         <div style="padding: 20px; text-align: center;">
           <h2 style="color: #ff69b4; font-size: 1.5rem;">C'est super sympa ! 🤝</h2>
           <p style="font-size: 1.2rem; line-height: 1.7; margin-top: 15px;">
-            J'attends donc le depot 🙂🙂<br><br>
+            J'attends donc le dépôt 🙂🙂<br><br>
             Merci Fleury ! 😜💸
           </p>
         </div>
@@ -416,4 +416,4 @@ function initGalaxy() {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
   });
-}
+        }
